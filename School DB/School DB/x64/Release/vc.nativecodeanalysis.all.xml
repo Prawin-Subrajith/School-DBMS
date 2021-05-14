@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+      <FILENAME>School DB.cpp</FILENAME>
+      <LINE>73</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>6054</DEFECTCODE>
+    <DESCRIPTION>String 'password' might not be zero-terminated.</DESCRIPTION>
+    <FUNCTION>credentials::verify</FUNCTION>
+    <DECORATED>?verify@credentials@@QEAAHXZ</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>This expression may not zero-terminate 'password'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'password' is an Input to 'strcmp' (declared at c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h:100)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'password' is required to be zero-terminated by a SAL annotation on 'strcmp'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+      <FILENAME>School DB.cpp</FILENAME>
+      <LINE>73</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'password'.</DESCRIPTION>
+    <FUNCTION>credentials::verify</FUNCTION>
+    <DECORATED>?verify@credentials@@QEAAHXZ</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'password' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'password' is an Input to 'strcmp' (declared at c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h:100)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TEJENDRA SARADHI\source\repos\School DB\School DB\</FILEPATH>
+        <FILENAME>School DB.cpp</FILENAME>
+        <LINE>73</LINE>
+        <COLUMN>38</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'password' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT></DEFECTS>
