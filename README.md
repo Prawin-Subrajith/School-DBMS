@@ -1,4 +1,4 @@
-# SCHOOLDBMS
+# School-DBMS
 
 This is the repository for the SCHOOL DATABASE MANAGEMENT SYSTEM - CLI using C++
 
